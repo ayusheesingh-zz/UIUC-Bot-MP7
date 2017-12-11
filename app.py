@@ -26,7 +26,7 @@ def authenticate():
 @app.route('/', methods=['POST'])
 def respond():
     data = request.get_json()
-    print(json.dumps(data, indent=2))
+    print("Got request", json.dumps(data, indent=2))
 
     if data["object"] == "page":
         for entry in data["entry"]:
