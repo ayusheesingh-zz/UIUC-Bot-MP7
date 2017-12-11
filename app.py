@@ -32,9 +32,9 @@ def respond():
         for entry in data["entry"]:
             for event in entry["messaging"]:
                 if event.get("message") and event["message"].get("text"):
+                    print("Got request", json.dumps(data, indent=2))
                     if event["message"]["is_echo"]:
                         continue
-                    print("Got request", json.dumps(data, indent=2))
                     message = event["message"]["text"]
                     bot.send_text_message(event["sender"]["id"], wit.response(message))
 
