@@ -35,6 +35,7 @@ def respond():
                     if event["message"].get("is_echo") and event["message"]["is_echo"]:
                         continue
                     print("Got request", json.dumps(data, indent=2))
+                    sys.stdout.flush()
                     message = event["message"]["text"]
                     bot.send_text_message(event["sender"]["id"], wit.response(message))
 
