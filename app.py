@@ -11,8 +11,8 @@ app = Flask(__name__)
 # token for facebook page
 bot = Bot("EAAbwYM5CtuwBANUIGgDScEqkJBYgZBd9K2tGqndPRhZAeWZC5jXv7U4FVABxZBGZCfKGmT0HoHUlK2WY0fIpRc4EHCHPuTNrHZA7BkOiegZAqJsrXt7oTLPniWlXoLHARskJGfwjFKPtdZA3REfe5vsvpvK0wm6fehTteBLYdSoPYWsFrD0VZAglK")
 # wit access token
-wit = witlib.WitAdapter("S5PPAUKICHKPQASRGIJ5BFEYJF7BPXWB")
 wit = witlib.WitAdapter("ZGTJG7FCVEHPF6JDPXL222BHQTW6MNAY")
+wit = witlib.WitAdapter("FOQMR2AITHLFCO2TE4AXN5Z7NZ33LRZY")
 
 @app.route('/', methods=['GET'])
 def authenticate():
