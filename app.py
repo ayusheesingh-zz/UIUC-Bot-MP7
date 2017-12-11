@@ -12,6 +12,7 @@ app = Flask(__name__)
 bot = Bot("EAAbwYM5CtuwBANUIGgDScEqkJBYgZBd9K2tGqndPRhZAeWZC5jXv7U4FVABxZBGZCfKGmT0HoHUlK2WY0fIpRc4EHCHPuTNrHZA7BkOiegZAqJsrXt7oTLPniWlXoLHARskJGfwjFKPtdZA3REfe5vsvpvK0wm6fehTteBLYdSoPYWsFrD0VZAglK")
 # wit access token
 wit = witlib.WitAdapter("S5PPAUKICHKPQASRGIJ5BFEYJF7BPXWB")
+wit = witlib.WitAdapter("ZGTJG7FCVEHPF6JDPXL222BHQTW6MNAY")
 
 @app.route('/', methods=['GET'])
 def authenticate():
